@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/styles.css"/>
+
+    <script src="js/todoList.js"></script>
+
+    <title>Simple List</title>
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<section id="listContainer" class="list-container animated fadeIn flipInY">
+    <header class="list-header">
+        <h1>TO DO LIST</h1>
+    </header>
+    <menu class="tabs">
+        <li>
+            <input type="radio" name="radio-set"/>
+            <a href="#yesterdayList">Yesterday</a>
+        </li>
+        <li>
+            <input type="radio" name="radio-set"/>
+            <a href="#itemsContainer">Today</label></a>
+        </li>
+        <li>
+            <input type="radio" name="radio-set"/>
+            <a href="#tomorrowList">Tomorrow</label></a>
+        </li>
+    </menu>
+    <main class="content">
+        <section class="panel">
+            <input id="txtNewItem" class="new-item" type="text"
+                   placeholder="Add items to list..." autofocus/>
+            <span id="btnAddItem" class="btn-add-item item-settings"><i
+                    class="fa fa-plus btn-add"></i></span>
+        </section>
+        <section id="yesterdayList" class="content-yesterday">
+            <h2>About author:</h2>
+
+            <h3>Arthur Zahreba</h3>
+            <h4>Software engineer</h4>
+        </section>
+        <section id="itemsContainer"
+                 class="content-today items-container"></section>
+        <section id="tomorrowList" class="content-tomorrow">
+            <h2>Contacts</h2>
+            <h4>email: azahreba@gmail.com</h4>
+            <h4>skype: azahreba</h4>
+        </section>
+    </main>
+    <footer id="statistics" class="statistics"></footer>
+</section>
+
+</body>
+</html>
